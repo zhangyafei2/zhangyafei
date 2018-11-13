@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			function creatA() {
+				n = document.getElementById("div1");
+				x = document.createElement("a");
+				y = document.createTextNode("A");
+				n.appendChild(x);
+				x.appendChild(y);
+				x.style.color = "gold";
+				x.style.backgroundColor = "red";
+			}
+
+			function removeP() {
+				var q = document.getElementsByTagName("p");
+				for(z = q.length + 2; z > 0; z--) {
+					q[0].remove();
+				}
+
+			}
+			function removeA() {
+				var q = document.getElementsByTagName("a");
+				for(z = q.length + 1; z > 0; z--) {
+					q[0].remove();
+				}
+
+			}
+			function redbackground(){
+				var alldiv1=document.getElementById("div1");
+				var childs=alldiv1.children;
+			for(var i=childs.length-1;i>=0;i--)
+			{
+				childs[i].style.backgroundColor="red";
+			}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="div1" style="border: 1px solid gold;width: 700px;height: auto;margin: 0 auto;">
+			<p>p1</p>
+			<p>p2</p>
+			<a>a1</a>
+			</a>
+		</div>
+		<button onclick="creatA()">添加A</button>
+		<button onclick="removeP()">删除P</button>
+		<button onclick="removeA()">删除A</button>
+		<button onclick="redbackground()">设背景为红</button>
+	</body>
+
+</html>
