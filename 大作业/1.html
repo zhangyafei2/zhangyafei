@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>橙心橙意-演示页面</title>
+		<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://www.lanrenzhijia.com/ajaxjs/1.3.2/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.holder').hover(
+					function() {
+						$(this).removeClass('.notactive');
+						$('.notactive').stop().animate({
+							'width': '290px'
+						}, 400);
+						$(this).find('img').stop().animate({
+							'top': '-165px'
+						}, 400);
+						$(this).stop().animate({
+							'width': '380px'
+						}, 400);
+						$(this).find('span').css({
+							'background-color': '#000'
+						});
+						$(this).find('.text').fadeIn(300);
+					},
+					function() {
+						$('.notactive').stop().animate({
+							'width': '320px'
+						}, 400);
+						$(this).addClass('.notactive');
+						$(this).find('.text').hide();
+						$(this).find('img').stop().animate({
+							'top': '0px'
+						}, 500);
+						$(this).stop().animate({
+							'width': '320px'
+						}, 400);
+						$(this).find('span').css({
+							'background-color': '#333',
+							'color': '#dedede'
+						});
+
+					});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div style="background-color: coral; width: 960px;margin: 0 auto;">
+			<div style="margin: 0 auto;width: 960px;background-color: white;"><img src="images/235073-14032H2525524 - 副本 (3).jpg" sizes="100%"><img src="images/235073-14032H2525524 - 副本 (3).jpg"><img src="images/235073-14032H2525524 - 副本 (3).jpg" sizes="100%"><img src="images/235073-14032H2525524 - 副本 (3).jpg"><img src="images/235073-14032H2525524 - 副本 (3).jpg" sizes="100%"><img src="images/235073-14032H2525524 - 副本 (3).jpg"><img src="images/235073-14032H2525524 - 副本 (3).jpg" sizes="100%"><img src="images/235073-14032H2525524 - 副本 (3).jpg"></div>
+			<div class="main">
+				<div style="width: 960px;height: 50px;background-color:#FFFF00;text-align: center;"><span style="color: white;font-size:xx-large ;text-align: center;"><b">一见倾心</b></span></div>
+				<div class="holder notactive"> <img class="image" src="images/0d5d3cf200e44d2b8005f7d758bdc6c3.jpg" height="" /> <span>采摘</span>
+					<div class="text">辛勤的苗女正在采摘</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/620417683f444476a2f9c827b25d5b31.jpg" /> <span>收集</span>
+					<div class="text">苗家少女正在收集采摘的橙子</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/93e41b7944074bf2a0c162f079ab497a.jpg" /> <span>整理</span>
+					<div class="text">正在认真的进行整理，使顾客能得到一枚好橙子</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="main">
+				<div style="width: 960px;height: 50px;background-color:#FFFF00;text-align: center;"><span style="color: white;font-size:xx-large ;text-align: center;"><b>主打产品：麻阳冰糖橙</b></span></div>
+				<div class="holder notactive"> <img class="image" src="images/冰糖橙2.jpg" height="" /> <span>冰</span>
+					<div class="text">麻阳冰糖橙果实色香味，肉质细嫩，风味浓甜，清香爽口，色香味兼优，果汁丰富。果除含多量糖分、有机酸、矿物质外，还富含维生素C，营养价值高！ </div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/冰糖橙.jpg" /> <span>糖</span>
+					<div class="text">你可还记得， 四月里柑橘树下的约定？ “待我甜果垂梢，君来品赏可好？” 说好了的，春来赏花，冬来吃橙。 麻阳人踮起脚尖正翘首以盼。
+					</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/冰糖橙3.jpg" /> <span>橙</span>
+					<div class="text">一见惹情牵， 便是灯火阑珊； 转身不忍看， 心里却千回百转。
+					</div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="main">
+				<div style="width: 960px;height: 50px;background-color:#FFFF00;text-align: center;"><span style="color: white;font-size:xx-large ;text-align: center;"><b>副产品：香水血橙+褚橙</b></span></div>
+				<div class="holder notactive"> <img class="image" src="images/u=806673000,1430785389&fm=26&gp=0.jpg" height="" /> <span>香水血橙</span>
+					<div class="text">血橙（blood orange）是橙（Citrus sinensis）的变种，俗称红橙。它带有深红色似血颜色的果肉与汁液，较寻常的橙体积小；</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/褚橙.jpg" /> <span>褚</span>
+					<div class="text">褚橙（拼音：chǔ chéng）是指由褚时健栽培于云南的冰糖橙，属甜橙类。其形状为圆形至长圆形，颜色为橙黄色。</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/褚橙2.jpg" /> <span>橙</span>
+					<div class="text">含有大量维生素C，营养价值高，高甜低酸，果皮易剥离，中心柱充实，汁味甜而清香，无苦味。</div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="main">
+				<div style="width: 960px;height: 50px;background-color:#FFFF00;text-align: center;"><span style="color: white;font-size:xx-large ;text-align: center;"><b>甜过初恋</b></span></div>
+				<div class="holder notactive"> <img class="image" src="images/9b346a3ac2ab47f38a25e959554554b4.jpg" height="" /> <span>苗乡</span>
+					<div class="text">这一年有和风细雨， 强健了亩亩枝杆， 还有和煦阳光， 染红了娇娇笑颜， 更有秋冻风霜，沉淀了蜜蜜果甜。
+					</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/d2baa3d65fea4950b807ac2ee1b9d9bf.jpg" /> <span>喜得橙</span>
+					<div class="text">当然，最重要的是 尝一尝我给你亲手摘的冰糖橙， 剥开吃一口，沁甜！
+					</div>
+				</div>
+				<div class="holder notactive"> <img class="image" src="images/d709af6ecf774e92ba2b90815e071db2.jpg" /> <span>快来吧！</span>
+					<div class="text">不肯摘下，只是捧近鼻尖， 闭上眼闻一闻， 说是哪里舍得伤害 这世上最迷人的香雪海一丁点。
+					</div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+		<div style="margin: 0 auto; border-radius: 20px; width: 960px;height: 20px;background-color: #FFFF00;"></div><br />
+		<div style="margin: 0 auto;width: 960px;">
+			<a href="2.html"><button style="text-align: center;height: 50px; width: 960px;background-color: #FFFF00;color: white;"><b style="font-size: xx-large;">下一页</b></button></a>
+		</div>
+	</body>
+
+</html>
